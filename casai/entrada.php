@@ -69,10 +69,10 @@
                     </div>
                     <div class="tipo-hospedagem-group">
                         <div class="tipo-hospedagem-input">
-                            <input id="paciente
+                            <input id="visitante
                                             
-                            '" type="radio" name="tipo_hospedagem" value="Paciente" required>
-                            <label for="paciente">Paciente</label>
+                            '" type="radio" name="tipo_hospedagem" value="Visitante" required>
+                            <label for="visitante">Visitante</label>
                         </div>
                         <div class="gender-input">
                             <input id="acompanhante" type="radio" name="tipo_hospedagem" value="Acompanhante" required>

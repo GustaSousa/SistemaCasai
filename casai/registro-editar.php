@@ -23,7 +23,6 @@
             while($registros_data = mysqli_fetch_assoc($result))
             {
                 $nome = $registros_data['nome'];
-                $nome_antigo = $registros_data['nome'];
                 $nomeTradicional = $registros_data['nome_tradicional'];
                 $sexo = $registros_data['sexo'];
                 $nascimento = $registros_data['data_nascimento'];
@@ -164,6 +163,7 @@
                     <label for="complemento" class="lableInput">Contato (complemento)</label>
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id?>">
+                <input type="hidden" name="nome_antigo" value="<?php echo $nome?>">
                 <input type="submit" name="update" id="update" value="Editar">
             </fieldset>
         </form>
