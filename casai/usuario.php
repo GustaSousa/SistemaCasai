@@ -34,17 +34,19 @@
         <a href="home.php">Voltar</a>
     </div>
 
-    <div class="box">
-        <div class="titulo">
-            <h1>Usuário:</h1>
-        </div>
-        
-        <div class="usuario-logado">
-            <p><?php
-                echo $logado;
-                ?>
-            </p>
-            <a href="sair.php" class="button">Sair</a>
+    <div class="box-box">
+        <div class="box">
+            <div class="titulo">
+                <h1>Usuário:</h1>
+            </div>
+            <div class="usuario-logado">
+                <p>
+                    <?php
+                    echo $logado;
+                    ?>
+                </p>
+                <a href="sair.php" class="button">Sair</a>
+            </div>
         </div>
     </div>
 </body>
