@@ -8,8 +8,8 @@
  }
 
 $ano = date('Y');
-$JUN = $ano.'/07/01';
-$JUNF = $ano.'/07/31';
+$JUN = $ano.'/06/01';
+$JUNF = $ano.'/06/31';
 
 $sql = "SELECT * FROM casaidb.entradas WHERE data_Entrada >= '$JUN' AND data_Entrada <= '$JUNF' ORDER BY data_Entrada ASC";
 $result = $conexao->query($sql);
