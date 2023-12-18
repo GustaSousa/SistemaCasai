@@ -7,14 +7,14 @@
      header('Location: login.php');
  }
 
-if(!empty($_GET['search'])){
-    $data = $_GET['search'];
-    $sql = "SELECT * FROM entradas WHERE identradas LIKE '%$data%' or nome LIKE '%$data%' or hospital LIKE '%$data%' or tipo_Hospedagem LIKE '%$data%' or tipo_Consulta LIKE '%$data%' or data_consulta LIKE '%$data%' ORDER BY identradas DESC";
-}
+    if(!empty($_GET['search'])){
+        $data = $_GET['search'];
+        $sql = "SELECT * FROM entradas WHERE identradas LIKE '%$data%' or nome LIKE '%$data%' or hospital LIKE '%$data%' or tipo_Hospedagem LIKE '%$data%' or tipo_Consulta LIKE '%$data%' or data_consulta LIKE '%$data%' ORDER BY identradas DESC";
+    }
 
-else{
-    $sql = "SELECT * FROM entradas ORDER BY identradas DESC";
-}
+    else{
+        $sql = "SELECT * FROM entradas ORDER BY identradas DESC";
+    }
 
 $result = $conexao->query($sql);
 //print_r ($result);
@@ -76,7 +76,7 @@ $result = $conexao->query($sql);
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Etinia</th>
+                <th scope="col">Etnia</th>
                 <th scope="col">Tipo de Hospedagem</th>
                 <th scope="col">Hospital</th>
                 <th scope="col">Tipo da Consulta</th>
@@ -95,7 +95,7 @@ $result = $conexao->query($sql);
                     echo "<tr>";
                     echo "<td>".$entradas_data['identradas']."</td>";
                     echo "<td>".$entradas_data['nome']."</td>";
-                    echo "<td>".$entradas_data['etinia']."</td>";
+                    echo "<td>".$entradas_data['etnia']."</td>";
                     echo "<td>".$entradas_data['tipo_Hospedagem']."</td>";
                     echo "<td>".$entradas_data['hospital']."</td>";
                     echo "<td>".$entradas_data['tipo_Consulta']."</td>";

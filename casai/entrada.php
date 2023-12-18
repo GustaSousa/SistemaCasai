@@ -12,10 +12,10 @@
     {
 
         $nome = $_POST['nome'];
-            $sqlEtinia = "SELECT etinia FROM registros WHERE nome='$nome'";
-            $resultEtinia = $conexao->query($sqlEtinia);
-            $registros_etinia = mysqli_fetch_assoc($resultEtinia);
-        $etinia = $registros_etinia ['etinia'];
+            $sqlEtnia = "SELECT etnia FROM registros WHERE nome='$nome'";
+            $resultEtnia = $conexao->query($sqlEtnia);
+            $registros_etnia = mysqli_fetch_assoc($resultEtnia);
+        $etnia = $registros_etnia ['etnia'];
         $tipo_hospedagem = $_POST['tipo_hospedagem'];
         $hospital = $_POST['hospital'];
         $tipo_consulta = $_POST['tipo_consulta'];
@@ -24,7 +24,7 @@
         $data_entrada = $_POST['data_entrada'];
         $data_saida = $_POST['data_saida'];
 
-        $result = mysqli_query($conexao, "INSERT INTO entradas (nome,etinia,tipo_hospedagem,hospital,tipo_consulta,data_consulta,observacoes,data_entrada,data_saida) VALUES ('$nome','$etinia','$tipo_hospedagem','$hospital','$tipo_consulta','$data_consulta','$observacoes','$data_entrada','$data_saida')");
+        $result = mysqli_query($conexao, "INSERT INTO entradas (nome,etnia,tipo_hospedagem,hospital,tipo_consulta,data_consulta,observacoes,data_entrada,data_saida) VALUES ('$nome','$etnia','$tipo_hospedagem','$hospital','$tipo_consulta','$data_consulta','$observacoes','$data_entrada','$data_saida')");
 
         header('Location: historico-entradas.php');
     }
@@ -69,10 +69,10 @@
                     </div>
                     <div class="tipo-hospedagem-group">
                         <div class="tipo-hospedagem-input">
-                            <input id="visitante
+                            <input id="paciente
                                             
-                            '" type="radio" name="tipo_hospedagem" value="Visitante" required>
-                            <label for="visitante">Visitante</label>
+                            '" type="radio" name="tipo_hospedagem" value="Paciente" required>
+                            <label for="paciente">Paciente</label>
                         </div>
                         <div class="gender-input">
                             <input id="acompanhante" type="radio" name="tipo_hospedagem" value="Acompanhante" required>

@@ -21,14 +21,14 @@
         $sexo = $_POST['gender'];
         $nascimento = $_POST['data_nasc'];
         $indigena = $_POST['is_indigenous'];
-        $etinia = $_POST['etinia'];
+        $etnia = $_POST['etnia'];
         $aldeia = $_POST['aldeia'];
         $cpf = $_POST['cpf'];
         $rg = $_POST['rg'];
         $sus = $_POST['cartaoSus'];
         $complemento = $_POST['complemento'];
 
-        $result = mysqli_query($conexao, "INSERT INTO registros (nome,nome_tradicional,sexo,data_nascimento,indigena,etinia,aldeia,cpf,rg,cartao_sus,complemento) VALUES ('$nome','$nomeTradicional','$sexo','$nascimento','$indigena','$etinia','$aldeia','$cpf','$rg','$sus','$complemento')");
+        $result = mysqli_query($conexao, "INSERT INTO registros (nome,nome_tradicional,sexo,data_nascimento,indigena,etnia,aldeia,cpf,rg,cartao_sus,complemento) VALUES ('$nome','$nomeTradicional','$sexo','$nascimento','$indigena','$etnia','$aldeia','$cpf','$rg','$sus','$complemento')");
 
         header('Location: home.php');
     }
@@ -129,9 +129,9 @@
                     <br>
 
                     <div class="inputBox">
-                        <input type="text" name="etinia" id="etinia" class="inputUser" maxlength="30" placeholder="" list="etinias" autocomplete="off">
-                        <label for="etinia" class="lableInput">Etinia</label>
-                        <datalist id="etinias">
+                        <input type="text" name="etnia" id="etnia" class="inputUser" maxlength="30" placeholder="" list="etnias" autocomplete="off">
+                        <label for="etnia" class="lableInput">Etnia</label>
+                        <datalist id="etnias">
                             <option value="Atikum">
                             <option value="Atikum Salgueiro">
                             <option value="Funil-Ô">

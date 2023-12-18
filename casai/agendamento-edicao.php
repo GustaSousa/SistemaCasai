@@ -6,13 +6,13 @@
         
         $id = $_POST['id'];
         $nome = $_POST['nome'];
-        $etinia = $_POST['etinia'];
+        $etnia = $_POST['etnia'];
         $hospital = $_POST['hospital'];
         $tipo_consulta = $_POST['tipo_consulta'];
         $data_consulta = $_POST['data_consulta'];
         $realizou = $_POST['realizou'];
 
-        $sqlUpdate = "UPDATE agendamentos SET nome='$nome',etinia='$etinia',hospital='$hospital',tipo_consulta='$tipo_consulta',data_consulta='$data_consulta',realizou='$realizou' WHERE idagendamentos='$id'";
+        $sqlUpdate = "UPDATE agendamentos SET nome='$nome',etnia='$etnia',hospital='$hospital',tipo_consulta='$tipo_consulta',data_consulta='$data_consulta',realizou='$realizou' WHERE idagendamentos='$id'";
 
         $result = $conexao->query($sqlUpdate);
 

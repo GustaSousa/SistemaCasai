@@ -9,7 +9,7 @@
 
  if(!empty($_GET['search'])){
     $data = $_GET['search'];
-    $sql = "SELECT * FROM registros WHERE id LIKE '%$data%' or nome_tradicional LIKE '%$data%' or nome LIKE '%$data%' or sexo LIKE '%$data%' or indigena LIKE '%$data%' or aldeia LIKE '%$data%' or etinia LIKE '%$data%' or cpf LIKE '%$data%' or cartao_sus LIKE '%$data%' ORDER BY id DESC";
+    $sql = "SELECT * FROM registros WHERE id LIKE '%$data%' or nome_tradicional LIKE '%$data%' or nome LIKE '%$data%' or sexo LIKE '%$data%' or indigena LIKE '%$data%' or aldeia LIKE '%$data%' or etnia LIKE '%$data%' or cpf LIKE '%$data%' or cartao_sus LIKE '%$data%' ORDER BY id DESC";
 }
 else{
     $sql = "SELECT * FROM registros ORDER BY id DESC";
@@ -64,7 +64,7 @@ else{
                 <th scope="col">Sexo</th>
                 <th scope="col">Data de Nascimento</th>
                 <th scope="col">Indigena</th>
-                <th scope="col">Etinia</th>
+                <th scope="col">Etnia</th>
                 <th scope="col">CPF</th>
                 <th scope="col">RG</th>
                 <th scope="col">Cartão Sus</th>
@@ -81,7 +81,7 @@ else{
                     echo "<td>".$registros_data['sexo']."</td>";
                     echo "<td>".$registros_data['data_nascimento']."</td>";
                     echo "<td>".$registros_data['indigena']."</td>";
-                    echo "<td>".$registros_data['etinia']."</td>";
+                    echo "<td>".$registros_data['etnia']."</td>";
                     echo "<td>".$registros_data['cpf']."</td>";
                     echo "<td>".$registros_data['rg']."</td>";
                     echo "<td>".$registros_data['cartao_sus']."</td>";

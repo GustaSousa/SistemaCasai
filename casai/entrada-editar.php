@@ -74,8 +74,8 @@
                     </div>
                     <div class="tipo-hospedagem-group">
                         <div class="tipo-hospedagem-input">
-                            <input id="Visitante" type="radio" name="tipo_hospedagem" value="Visitante" <?php echo $tipo_hospedagem == 'Visitante' ? 'checked' : '' ?> required>
-                            <label for="Visitante">Visitante</label>
+                            <input id="Paciente" type="radio" name="tipo_hospedagem" value="Paciente" <?php echo $tipo_hospedagem == 'Paciente' ? 'checked' : '' ?> required>
+                            <label for="Paciente">Paciente</label>
                         </div>
                         <div class="gender-input">
                             <input id="Acompanhante" type="radio" name="tipo_hospedagem" value="Acompanhante" <?php echo $tipo_hospedagem == 'Acompanhante' ? 'checked' : '' ?> required>

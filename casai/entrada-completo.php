@@ -44,7 +44,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASAI | Entrada Completa</title>
@@ -70,8 +70,8 @@
                     </div>
                     <div class="tipo-hospedagem-group">
                         <div class="tipo-hospedagem-input">
-                            <input id="Visitante" type="radio" name="tipo_hospedagem" value="Visitante" <?php echo $tipo_hospedagem == 'Visitante' ? 'checked' : '' ?> required>
-                            <label for="Visitante">Visitante</label>
+                            <input id="Paciente" type="radio" name="tipo_hospedagem" value="Paciente" <?php echo $tipo_hospedagem == 'Paciente' ? 'checked' : '' ?> required>
+                            <label for="Paciente">Paciente</label>
                         </div>
                         <div class="gender-input">
                             <input id="Acompanhante" type="radio" name="tipo_hospedagem" value="Acompanhante" <?php echo $tipo_hospedagem == 'Acompanhante' ? 'checked' : '' ?> required>

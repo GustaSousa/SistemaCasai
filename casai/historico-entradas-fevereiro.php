@@ -71,7 +71,7 @@ $result = $conexao->query($sql);
             <tr>
             <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Etinia</th>
+                <th scope="col">Etnia</th>
                 <th scope="col">Tipo de Hospedagem</th>
                 <th scope="col">Hospital</th>
                 <th scope="col">Tipo da Consulta</th>
@@ -90,7 +90,7 @@ $result = $conexao->query($sql);
                     echo "<tr>";
                     echo "<td>".$entradas_data['identradas']."</td>";
                     echo "<td>".$entradas_data['nome']."</td>";
-                    echo "<td>".$entradas_data['etinia']."</td>";
+                    echo "<td>".$entradas_data['etnia']."</td>";
                     echo "<td>".$entradas_data['tipo_Hospedagem']."</td>";
                     echo "<td>".$entradas_data['hospital']."</td>";
                     echo "<td>".$entradas_data['tipo_Consulta']."</td>";

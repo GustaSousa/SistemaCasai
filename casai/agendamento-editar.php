@@ -23,7 +23,7 @@
             while($entradas_data = mysqli_fetch_assoc($result))
             {
                 $nome = $entradas_data['nome'];
-                $etinia = $entradas_data['etinia'];
+                $etnia = $entradas_data['etnia'];
                 $hospital = $entradas_data['hospital'];
                 $tipo_consulta = $entradas_data['tipo_consulta'];
                 $data_consulta = $entradas_data['data_consulta'];
@@ -62,15 +62,15 @@
                 </div>
 
                 <div class="inputBox">
-                    <input type="text" name="etinia" id="etinia" class="inputUser" maxlength="45"  value="<?php echo $etinia ?>" placeholder="">
-                    <label for="etinia" class="lableInput">Etinia</label>
+                    <input type="text" name="etnia" id="etnia" class="inputUser" maxlength="45"  value="<?php echo $etnia ?>" placeholder="">
+                    <label for="etnia" class="lableInput">Etnia</label>
                 </div>
                 -->
                 <div class="inputBox">
                     <p>Nome: <?php echo $nome ?></p>
                 </div>
                 <div class="inputBox">
-                    <p>Etinia: <?php echo $etinia ?></p>
+                    <p>Etnia: <?php echo $etnia ?></p>
                 </div>
                 <div class="inputBox">
                     <input type="text" name="hospital" id="hospital" class="inputUser" maxlength="45" placeholder="" value="<?php echo $hospital ?>">

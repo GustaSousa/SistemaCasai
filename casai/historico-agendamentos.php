@@ -9,7 +9,7 @@
 
 if(!empty($_GET['search'])){
     $data = $_GET['search'];
-    $sql = "SELECT * FROM agendamentos WHERE idagendamentos LIKE '%$data%' or nome LIKE '%$data%' or etinia LIKE '%$data%' or hospital LIKE '%$data%' or tipo_consulta LIKE '%$data%' or data_consulta LIKE '%$data%' or realizou LIKE '%$data%' ORDER BY idagendamentos DESC";
+    $sql = "SELECT * FROM agendamentos WHERE idagendamentos LIKE '%$data%' or nome LIKE '%$data%' or etnia LIKE '%$data%' or hospital LIKE '%$data%' or tipo_consulta LIKE '%$data%' or data_consulta LIKE '%$data%' or realizou LIKE '%$data%' ORDER BY idagendamentos DESC";
 }
 
 else{
@@ -89,7 +89,7 @@ $result = $conexao->query($sql);
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Etinia</th>
+                <th scope="col">Etnia</th>
                 <th scope="col">Hospital</th>
                 <th scope="col">Tipo da Consulta</th>
                 <th scope="col">Data da Consulta</th>
@@ -104,7 +104,7 @@ $result = $conexao->query($sql);
                     echo "<tr>";
                     echo "<td>".$entradas_data['idagendamentos']."</td>";
                     echo "<td>".$entradas_data['nome']."</td>";
-                    echo "<td>".$entradas_data['etinia']."</td>";
+                    echo "<td>".$entradas_data['etnia']."</td>";
                     echo "<td>".$entradas_data['hospital']."</td>";
                     echo "<td>".$entradas_data['tipo_consulta']."</td>";
                     echo "<td>".$entradas_data['data_consulta']."</td>";

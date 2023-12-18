@@ -27,7 +27,7 @@
                 $sexo = $registros_data['sexo'];
                 $nascimento = $registros_data['data_nascimento'];
                 $indigena = $registros_data['indigena'];
-                $etinia = $registros_data['etinia'];
+                $etnia = $registros_data['etnia'];
                 $aldeia = $registros_data['aldeia'];
                 $cpf = $registros_data['cpf'];
                 $rg = $registros_data['rg'];
@@ -139,8 +139,8 @@
                 <br>
 
                 <div class="inputBox">
-                    <input type="text" name="etinia" id="etinia" class="inputUser" maxlength="30" value="<?php echo $etinia ?>">
-                    <label for="nome" class="lableInput">Etinia</label>
+                    <input type="text" name="etnia" id="etnia" class="inputUser" maxlength="30" value="<?php echo $etnia ?>">
+                    <label for="nome" class="lableInput">Etnia</label>
                 </div>
                 <div class="inputBox">
                     <input type="text" name="aldeia" id="aldeia" class="inputUser" maxlength="30" value="<?php echo $aldeia ?>">

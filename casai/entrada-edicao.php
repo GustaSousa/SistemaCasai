@@ -33,7 +33,7 @@
         //   echo $sexo;
         //   echo $nascimento;
         //   echo $indigena;
-        //   echo $etinia;
+        //   echo $etnia;
         //   echo $aldeia;
         //   print_r('---');
         //   echo $cpf;

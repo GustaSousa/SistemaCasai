@@ -12,16 +12,16 @@
     {
 
         $nome = $_POST['nome'];
-            $sqlEtinia = "SELECT etinia FROM registros WHERE nome='$nome'";
-            $resultEtinia = $conexao->query($sqlEtinia);
-            $registros_etinia = mysqli_fetch_assoc($resultEtinia);
-        $etinia = $registros_etinia ['etinia'];
+            $sqlEtnia = "SELECT etnia FROM registros WHERE nome='$nome'";
+            $resultEtnia = $conexao->query($sqlEtnia);
+            $registros_etnia = mysqli_fetch_assoc($resultEtnia);
+        $etnia = $registros_etnia ['etnia'];
         $hospital = $_POST['hospital'];
         $tipo_consulta = $_POST['tipo_consulta'];
         $data_consulta = $_POST['data_consulta'];
         $realizou = $_POST['realizou'];
 
-        $result = mysqli_query($conexao, "INSERT INTO agendamentos (nome,etinia,hospital,tipo_consulta,data_consulta,realizou) VALUES ('$nome','$etinia','$hospital','$tipo_consulta','$data_consulta','$realizou')");
+        $result = mysqli_query($conexao, "INSERT INTO agendamentos (nome,etnia,hospital,tipo_consulta,data_consulta,realizou) VALUES ('$nome','$etnia','$hospital','$tipo_consulta','$data_consulta','$realizou')");
 
         header('Location: historico-agendamentos.php');
     }
@@ -61,8 +61,8 @@
                 </div>
                 <!--
                     <div class="inputBox">
-                        <input type="text" name="etinia" id="etinia" class="inputUser" maxlength="45" placeholder="">
-                        <label for="etinia" class="lableInput">Etinia</label>
+                        <input type="text" name="etnia" id="etnia" class="inputUser" maxlength="45" placeholder="">
+                        <label for="etnia" class="lableInput">Etnia</label>
                     </div>
                 -->
                 <div class="inputBox">
