@@ -18,21 +18,21 @@ body,html{
     align-items: center;
 }
 
+
 .home-box{
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     padding: 80px;
     display: flex;
     flex-direction: row;
+    
 }
 
 .home-box a {
     text-decoration: none;
     color: #FFF;
     font-size: 15px;
-    
     margin: 2px;
-
     background-color: #353a49;
     padding: 10px;
     border-radius: 10px;
@@ -65,8 +65,23 @@ body,html{
 }
 
 @media(max-width: 800px) {
-    .home-box{
+    .box {
+        position: relative;
+        width: 80%; 
+        max-width: 400px;
+        margin: 0px auto 0;
+    }
 
+    .box {
+        width: 55%;
+        max-width: none;
+    }
+
+    .home-box{
         flex-direction: column; 
+    }
+
+    .home-box a{
+        text-align: center;
     }
 }

@@ -34,8 +34,7 @@ body,html{
 .tabela-historico{
     display: flex;
     justify-content: center;
-    /*position: absolute;
-    width: 100%;*/
+    width: 100%;
     margin-top: 0%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
@@ -111,5 +110,16 @@ body,html{
 @media screen and (max-width: 1340px){
     body{
         zoom: 0.67;  
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        zoom: 0.67;  
+    }
+
+    .table-striped{
+        width: 100%;
+        table-layout: fixed;
     }
 }

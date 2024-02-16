@@ -139,11 +139,6 @@
                     <input type="text" name="complemento" id="complemento" class="inputUser" maxlength="110" placeholder="Email, Telefone... (Opcional)" value="<?php echo $complemento ?>">
                     <label for="complemento" class="lableInput">Contato (complemento)</label>
                 </div>
-<!--
-                <div class="submit" id="subimit">
-                    <a href="historico-registros.php">Historico</a>
-                </div>
--->
             </fieldset>
         </form>
     </div>

@@ -7,16 +7,15 @@ body,html{
     font-family: 'Kanit', sans-serif;
 }
 
-.box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.box {
+    position: relative;
     background-color: #FFF;
     border-radius: 8px;
     color: aliceblue;
     padding: 5px;
-    width: 30%;
+    width: 80%;
+    max-width: 400px;
+    margin: 25px auto 0;
 }
 
 .home-box{
@@ -104,7 +103,7 @@ fieldset{
 
 .voltar{
     position: absolute;
-    margin-top: 15px;
+    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -130,11 +129,9 @@ fieldset{
     }
 }
 
-@media (max-width: 800px){
-    .box{
-        width:auto;
-    }
-    fieldset{
-        padding-right: 30px;
+@media (max-width: 800px) {
+    .box {
+        width: 75%;
+        max-width: none; 
     }
 }

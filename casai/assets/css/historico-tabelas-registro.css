@@ -9,7 +9,6 @@ body,html{
     flex-direction: column;
 }
 
-
 .voltar{
     position: absolute;
     margin-top: 15px;
@@ -35,7 +34,6 @@ body,html{
 .tabela-historico{
     display: flex;
     justify-content: center;
-    /*position: absolute;*/ 
     width: 100%;
     margin-top: 0%;
     font-family: 'Courier New', Courier, monospace;
@@ -94,6 +92,7 @@ body,html{
 
 .box-mounth a:hover{
     background-color: #7CAE7A;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1920px){
@@ -105,5 +104,22 @@ body,html{
 @media screen and (max-width: 1400px){
     body{
         zoom: 0.75;  
+    }
+}
+
+@media screen and (max-width: 1340px){
+    body{
+        zoom: 0.67;  
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        zoom: 0.67;  
+    }
+
+    .table-striped{
+        width: 100%;
+        table-layout: fixed;
     }
 }

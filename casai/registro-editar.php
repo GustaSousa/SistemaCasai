@@ -66,7 +66,7 @@
     <script>
         function mascara_rg(){
             var rg = document.getElementById('rg')
-            if(rg.value.length == 1 || rg.value.length == 5) {
+            if(rg.value.length == 1 || rg.value.length == 5 || rg.value.length == 9) {
                 rg.value += '.'
             }
         }

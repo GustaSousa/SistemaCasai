@@ -7,24 +7,21 @@
      header('Location: login.php');
  }
 
- if(!empty($_GET['search'])){
-    $data = $_GET['search'];
-    $sql = "SELECT * FROM registros WHERE id LIKE '%$data%' or nome_tradicional LIKE '%$data%' or nome LIKE '%$data%' or sexo LIKE '%$data%' or indigena LIKE '%$data%' or aldeia LIKE '%$data%' or etnia LIKE '%$data%' or cpf LIKE '%$data%' or cartao_sus LIKE '%$data%' ORDER BY id DESC";
-}
-else{
-    $sql = "SELECT * FROM registros ORDER BY id DESC";
-}
+    if(!empty($_GET['search'])){
+        $data = $_GET['search'];
+        $sql = "SELECT * FROM registros WHERE id LIKE '%$data%' or nome_tradicional LIKE '%$data%' or nome LIKE '%$data%' or sexo LIKE '%$data%' or indigena LIKE '%$data%' or aldeia LIKE '%$data%' or etnia LIKE '%$data%' or cpf LIKE '%$data%' or cartao_sus LIKE '%$data%' ORDER BY id DESC";
+    }
+    else{
+        $sql = "SELECT * FROM registros ORDER BY id DESC";
+    }
 
  $result = $conexao->query($sql);
- // print_r($result);
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASAI | Historico de Registros</title>
     <link rel="stylesheet" href="assets//css//historico-tabelas-registro.css">
     <style>
@@ -56,7 +53,7 @@ else{
     <br>
 
     <div class="tabela-historico">
-        <table class="table table-striped">
+        <table class="table-striped">
         <thead>
             <tr>
                 <th scope="col">#</th>

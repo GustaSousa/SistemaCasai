@@ -1,6 +1,5 @@
 <?php
     session_start();
-    // print_r($_SESSION);
 
     include('config.php');
 
@@ -13,11 +12,6 @@
 
     $logado = $_SESSION['nome-login'];
 
-    //$sql = "SELECT * FROM registros ORDER BY id DESC";
-
-    //$result = $conexao->query($sql);
-
-    //print_r($result);
 ?>
 
 <!DOCTYPE html>

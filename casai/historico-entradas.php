@@ -16,8 +16,7 @@
         $sql = "SELECT * FROM entradas ORDER BY identradas DESC";
     }
 
-$result = $conexao->query($sql);
-//print_r ($result);
+ $result = $conexao->query($sql);
 ?>
 
 <!DOCTYPE html>

@@ -9,10 +9,6 @@
     
     if(isset($_POST['submit']))
     {
-        // print_r($_POST['nome']);
-        // print_r($_POST['nomet']);
-        // print_r($_POST['gender']);
-        // print_r($_POST['is_indigenous']);
 
         include_once('config.php');
 
@@ -57,7 +53,7 @@
     <script>
         function mascara_rg(){
             var rg = document.getElementById('rg')
-            if(rg.value.length == 1 || rg.value.length == 5) {
+            if(rg.value.length == 1 || rg.value.length == 5 || rg.value.length == 9) {
                 rg.value += '.'
             }
         }
@@ -158,7 +154,7 @@
                         <label for="cpf" class="lableInput">CPF</label>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="rg" id="rg" class="inputUser" minlength="9" maxlength="9"  placeholder="x.xxx.xxx (Obrigatório)" autocomplete="off" onkeypress="mascara_rg()" required>
+                        <input type="text" name="rg" id="rg" class="inputUser" minlength="9" maxlength="13"  placeholder="x.xxx.xxx (Obrigatório)" autocomplete="off" onkeypress="mascara_rg()" required>
                         <label for="rg" class="lableInput">RG</label>
                     </div>
                     <div class="inputBox">
